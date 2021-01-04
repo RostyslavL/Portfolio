@@ -21,6 +21,12 @@
 html{
     font-size: 70%;
 }
+
+.center{
+    justify-content: center;
+    text-align: center;   
+}
+
 .section-1{
     width: 100%;
     height: 150vh;
@@ -55,8 +61,11 @@ html{
     object-fit: cover;
     border: .3rem dashed  var(--dark-color);
     background-color: linear-gradient(rgba(71, 65, 65, 0.6), rgba(10, 40, 40, 0.8 ) );
+    box-shadow: 2rem 6rem 8rem  var(--dark-color);
     opacity: 0.9;
     padding: 0.6rem;
+    transform: scaleX(-1);
+   
 }
 .developer-name{
     font-size: 2rem;
@@ -76,9 +85,44 @@ html{
     font-size: 700;
     color: var(--dark-grey);
     background-color: var(--withe);
-    border: .3rem solid var(--dark-grey);
-    padding: .5rem  2rem;
-    letter-spacing: .4rem;
+    border: 0.3rem solid var(--dark-grey);
+    padding: 0.5rem  2rem;
+    letter-spacing: 0.4rem;
     text-transform: uppercase;
     border-radius: 20%;
+}
+/* navbar */
+nav {
+    height: 100%;
+    background-color: var(--soft-grey);
+    box-shadow: .2rem .2rem .6rem  var(--dark-grey);
+}
+
+.navbar-link{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0  3rem;
+    letter-spacing:  .4rem;
+    text-transform: uppercase;
+    position: relative;
+    color:var(--dark-grey);
+    transition: color 0.3s;
+}
+.navbar-link:hover{
+    color: var(--dark-color);
+}
+.navbar-link::before{
+    content: "";
+    width: 0%;
+    height: 0.25rem;
+    background-color:var(--dark-grey);
+    position: absolute;
+    right: -8%;
+    bottom: -.1rem;
+    transition: width 0.3s;
+  
+}
+.navbar-link:hover::before{
+    width: 120%;
+    background-color: var(--dark-color);
 }
