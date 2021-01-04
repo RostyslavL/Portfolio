@@ -3,6 +3,7 @@
     --dark-grey: #3d3d3d;
     --dark-color: #141414;
     --soft-grey:#999;
+    --withe:#fff;
 }
 /* reset styles */
 *{
@@ -22,13 +23,13 @@ html{
 }
 .section-1{
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background: 
         linear-gradient(
             var(--soft-grey),
             rgba(71, 65, 65, 0.6)), 
-        url('../img/20200719_161123.JPG') center no-repeat;
-        box-shadow: inset 10px 28px 8px var(--dark-color) , inset -10px -28px 8px var(--dark-color);
+        url('../img/_DSC2044.JPG') center no-repeat;
+        box-shadow: inset 150px 150px 300px var(--dark-color) ;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -56,4 +57,28 @@ html{
     background-color: linear-gradient(rgba(71, 65, 65, 0.6), rgba(10, 40, 40, 0.8 ) );
     opacity: 0.9;
     padding: 0.6rem;
+}
+.developer-name{
+    font-size: 2rem;
+    color: var(--withe);
+    background-color: var(--soft-grey);
+    margin: 7rem  0 ;
+    padding: .6rem 4rem;
+    border-radius: 25%;
+    text-shadow: 2rem 2rem 1rem var(--soft-grey);
+    border: .3rem double  var(--dark-grey);
+    transform:skew(-7deg);
+    letter-spacing: 0.4rem;
+
+}
+.section-1-btn{
+    font-weight: 1.5rem;
+    font-size: 700;
+    color: var(--dark-grey);
+    background-color: var(--withe);
+    border: .3rem solid var(--dark-grey);
+    padding: .5rem  2rem;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    border-radius: 20%;
 }
