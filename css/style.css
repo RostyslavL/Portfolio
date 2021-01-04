@@ -2,8 +2,10 @@
 :root{
     --dark-grey: #3d3d3d;
     --dark-color: #141414;
-    --soft-grey:#999;
+    --grey:hsl(0, 5%, 71%);
+    --soft-grey:hsl(0, 3%, 62%);
     --withe:#fff;
+    
 }
 /* reset styles */
 *{
@@ -91,6 +93,18 @@ html{
     text-transform: uppercase;
     border-radius: 20%;
 }
+.section-1-btn:hover{
+    font-weight: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--dark-grey);
+    background-color: var(--withe);
+    border: .8rem solid var(--dark-grey);
+    padding: 1rem  3rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    border-radius: 30%;
+    transition: 1.2s;
+}
 /* navbar */
 nav {
     height: 100%;
@@ -99,14 +113,14 @@ nav {
 }
 
 .navbar-link{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 600;
     margin: 0  3rem;
     letter-spacing:  .4rem;
     text-transform: uppercase;
     position: relative;
     color:var(--dark-grey);
-    transition: color 0.3s;
+    transition: color 0.8s;
 }
 .navbar-link:hover{
     color: var(--dark-color);
@@ -119,10 +133,128 @@ nav {
     position: absolute;
     right: -8%;
     bottom: -.1rem;
-    transition: width 0.3s;
+    transition: width 0.8s;
   
 }
 .navbar-link:hover::before{
     width: 120%;
     background-color: var(--dark-color);
+}
+.section-2{
+    width: 100%;
+    height: 100%;
+    padding: 15rem 0  10rem 0; 
+    background-color: var(--withe);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-heading{
+    font-size: 6rem;
+    color:var(--soft-grey);
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    margin-bottom: 20rem;
+    border-bottom:  .4rem solid var(--soft-grey);
+    text-shadow: .2rem .2rem .6rem var(--dark-color);
+
+}
+.skills-bars-wrapper{
+    margin-bottom: 15rem;
+}
+
+.skill-bar{
+    width: 70rem;
+    height: 4rem;
+    background-color: var(--grey);
+    margin: 2rem 0;
+    border-radius: .5rem;
+    box-shadow: .4rem .4rem .4rem  var(--soft-grey);
+    position: relative;
+    transition: 1.2s;
+}
+.skill-bar:hover{
+    width: 90rem;
+    height: 6rem;
+    background-color: var(--grey);
+    margin: 2rem 0;
+    padding: .5rem 0 1.5rem 0;
+    border-radius: .5rem;
+    box-shadow: .8rem .8rem .8rem  var(--soft-grey);
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    left: 1rem;
+    font-size: 2rem;
+    margin-top:  0.7rem;
+}
+
+.progress i {
+    margin:  0.7rem;
+}
+.progress span {
+    margin:  0.7rem;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 90%;
+}
+.progress{
+    width: 90%;
+    height: 3.3rem;
+    left: .33rem;
+    background-color: var(--dark-grey);
+    border-radius: .2rem;
+    position: absolute;
+}
+.services{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.services:first-child,
+.services:last-child{
+    align-self: flex-start;
+}
+.service-header, .service-item{
+    text-align: center;
+    
+}
+.service-header{
+    font-size: 6rem;
+    color: var(--soft-grey);
+    letter-spacing: 0.25rem;  
+    transition: 1.2s;  
+}
+.service-item i{
+    font-size: 8rem;
+    color: var(--soft-grey);
+    margin-bottom: 2rem;
+    text-shadow: 0.2rem 0.2rem 0.7rem var(--dark-color);
+    transition: 1.2s;
+
+}
+.service-item i:hover{
+    font-size: 10rem;
+    color: var(--dark-grey);
+    
+}
+.service-header:hover{
+    font-size: 10rem;
+    color: var(--dark-grey);
+    letter-spacing: 0.4rem;   
+}
+
+.service h2{
+    font-size: 2rem;
+    color: var(--soft-grey);
+    background-color: var(--dark-grey);
+    transform: skew(-10deg);
+    box-shadow: .5rem .5rem .7rem var(--dark-color);
 }
