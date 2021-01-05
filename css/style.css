@@ -415,3 +415,30 @@ nav {
     letter-spacing: 1.2rem;
     transition: .7s;
 }
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: var(--dark-color);
+    flex-direction: column;
+   
+}
+.social-media{
+    margin-bottom: 6rem;
+}
+.social-media-link{
+    display: inline-block;
+    margin: 0  3rem 3rem 0;
+    padding: 0.4rem;
+    background-color: var(--soft-grey);
+    border-radius:  .3rem;
+}
+.social-media-link i{
+    color: var(--white);
+    font-size: 4rem;
+}
+.copyright{
+    letter-spacing: .5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+}
