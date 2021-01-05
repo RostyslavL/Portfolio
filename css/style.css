@@ -32,7 +32,7 @@ html{
   }
 .section-heading{
     font-size: 6rem;
-    color:var(--soft-grey);
+    color:var(--white);
     text-transform: uppercase;
     letter-spacing: .6rem;
     margin-bottom: 20rem;
@@ -116,6 +116,7 @@ html{
     border-radius: 30%;
     transition: 1.2s;
 }
+
 /* navbar */
 nav {
     height: 100%;
@@ -372,9 +373,11 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+   
 }
 .section-4-heading{
-    margin-top: 10rem;
+
+    margin-bottom: 7rem;
     color: var(--white);
     box-shadow: none;
     border-color: var(--grey);
@@ -383,6 +386,7 @@ nav {
     width: 50rem;
     display: flex;
     flex-direction: column;
+   
 }
 
 .contact-form input,
