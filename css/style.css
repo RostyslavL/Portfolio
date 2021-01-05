@@ -118,12 +118,18 @@ html{
 }
 
 /* navbar */
-nav {
-    height: 100%;
+.navbar {
+    width: 100%;
+    height: 4rem;
     background-color: var(--soft-grey);
     box-shadow: .2rem .2rem .6rem  var(--dark-grey);
+    position: absolute;
+    z-index: 600;
 }
-
+.sticky{
+    position: fixed;
+    top: 0;
+}
 .navbar-link{
     font-size: 4rem;
     font-weight: 600;
@@ -134,8 +140,14 @@ nav {
     color:var(--dark-grey);
     transition: color 0.8s;
 }
+.change.navbar-link{
+    color:var(--white)
+}
 .navbar-link:hover{
     color: var(--dark-color);
+}
+.change.navbar-link::before{
+    width: 150%;
 }
 .navbar-link::before{
     content: "";
@@ -442,3 +454,4 @@ nav {
     text-align: center;
     color: var(--white);
 }
+
