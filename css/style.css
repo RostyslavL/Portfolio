@@ -460,3 +460,28 @@ html{
     color: var(--white);
 }
 
+/* Responsive */
+@media(max-width: 1200px){
+    .services{
+        height: auto;
+        flex-wrap: wrap;
+
+    }
+    .service{
+        margin: 4rem 2rem; 
+
+    }
+    .section-4{
+        height: 80vh;
+    }
+}
+@media(max-width:800px){
+
+    .section-1{
+        font-size: 1rem;
+    }
+    .skills-bar{
+        width:20rem;
+    }
+}
+
