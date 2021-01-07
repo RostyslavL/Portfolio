@@ -205,7 +205,9 @@ html{
     position: absolute;
     left: 1rem;
     font-size: 2rem;
-    margin-top:  0.7rem;
+    margin-top:  0.4rem;
+    z-index: 1;
+    letter-spacing: .4rem;
 }
 
 .progress i {
@@ -217,13 +219,15 @@ html{
     font-weight: 700;
     width: 90%;
 }
-.progress{
-    width: 90%;
+.skill-progres{
+    width: 0;
     height: 3.3rem;
     left: .33rem;
     background-color: var(--dark-grey);
     border-radius: .2rem;
     position: absolute;
+    padding-top: 2rem;
+    transition: width 0.8s 0.7s ease-in-out;
 }
 .services{
     width: 100%;
