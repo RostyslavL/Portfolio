@@ -23,6 +23,7 @@
 /*  1rem = 16px */
 html{
     font-size: 70%;
+    scroll-behavior: smooth;
 }
 
 .center {
@@ -147,7 +148,7 @@ html{
     color: var(--dark-color);
 }
 .change.navbar-link::before{
-    width: 150%;
+    width: 125%;
 }
 .navbar-link::before{
     content: "";

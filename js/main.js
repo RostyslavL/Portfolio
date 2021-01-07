@@ -1,13 +1,17 @@
 const navBar = document.querySelector('.navbar')
 const navBarTopReset = navBar.offsetTop
-const sectionSelector = document.querySelectorAll('section')
-const navBarLinksSelector = document.querySelectorAll('.navbar-link')
+const sections = document.querySelectorAll('section')
+const navBarLinks = document.querySelectorAll('.navbar-link')
 
 window.addEventListener('scroll', () => {
    window.pageYOffset >= navBarTopReset ? navBar.classList.add('sticky') : navBar.classList.remove('sticky')
 
-   sectionSelector.forEach((section, index ) =>{
-    navBarLinksSelector.forEach(navBarLinksSelector => navBarLinksSelector.classList.remove('change') )
-        window.pageYOffset >= (section.offsetTop - 20) ?  navBarLinksSelector[index].classList.add('change') : null
-   })
+   sections.forEach((section, index) => {
+    if (window.pageYOffset >= section.offsetTop - 50) {
+      navBarLinks.forEach((navbarLink) => {
+        navbarLink.classList.remove('change');
+      });
+      navBarLinks[index].classList.add('change');
+    }
+  });
 })
