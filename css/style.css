@@ -48,7 +48,7 @@ html{
         linear-gradient(
             var(--soft-grey),
             rgba(71, 65, 65, 0.6)), 
-        url('../img/_DSC2044.JPG') center no-repeat;
+        url('../img/background_img.jpg') center no-repeat;
         box-shadow: inset 150px 150px 300px var(--dark-color) ;
         background-size: cover;
         display: flex;
@@ -484,4 +484,3 @@ html{
         width:20rem;
     }
 }
-
